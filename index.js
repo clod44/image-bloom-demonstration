@@ -74,7 +74,10 @@ function bloom(iterations, sizeMult, alphaMult, blurSize, darkenStr){
         
         for (let iteration = 1; iteration < iterations+1; iteration++) {
             //create process canvas
-            const tempCanvas = createGraphics(max(1,floor(width * pow(sizeMult, iteration))), max(1,floor(height * pow(sizeMult, iteration))));
+            const tempCanvas = createGraphics(  max(1,floor(width*pow(sizeMult,iteration))),
+                                                max(1,floor(height*pow(sizeMult,iteration))));
+            console.log(tempCanvas.width, tempCanvas.height);
+            console.log("s");
             //copy original picture to process canvas
             tempCanvas.image(canvasImg, 0, 0, tempCanvas.width, tempCanvas.height);
             
