@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="page">
+        <div id="original-image-container">
+            <img id="original-image" src="#" alt="original image">
+        </div>
+        <div id="canvas-holder">
+
+        </div>
+        <div id="app-options">
+            <div class="range-container">
+                <label>Background:</label>
+                <input type="range" min="1" max="5" value="1" step="1" id="backgroundImage-range">
+                <label id="backgroundImage-range-label">1</label>
+            </div>
+            <div class="range-container">
+                <label>Iterations:</label>
+                <input type="range" min="0" max="5" value="1" step="1" id="iterations-range">
+                <label id="iterations-range-label">1</label>
+            </div>
+            <div class="range-container">
+                <label>Size Multiplier:</label>
+                <input type="range" min="0.00" max="1.00" value="0.35" step="0.01" id="sizeMult-range">
+                <label id="sizeMult-range-label">0.35</label>
+            </div>
+            <div class="range-container">
+                <label>Alpha Multiplier:</label>
+                <input type="range" min="0.01" max="1.00" value="0.90" step="0.01" id="alphaMult-range">
+                <label id="alphaMult-range-label">0.90</label>
+            </div>
+            <div class="range-container">
+                <label>Blur Size:</label>
+                <input type="range" min="0.00" max="5.00" value="2" step="0.01" id="blurSize-range">
+                <label id="blurSize-range-label">2</label>
+            </div>
+            <div class="range-container">
+                <label>Darken Strength:</label>
+                <input type="range" min="0.00" max="1.00" value="0" step="0.01" id="darkenStr-range">
+                <label id="darkenStr-range-label">2</label>
+            </div>
+        </div>
+        <div id="history-container">
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <a class="icon" href="#">
+        <img class="icon-image" src="images/github.png" alt="source code">
+    </a>
+</body>
+</html>

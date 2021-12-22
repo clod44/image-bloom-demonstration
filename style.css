@@ -1,0 +1,97 @@
+
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    background: black;
+}
+
+#page{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "original-image-container canvas-holder"
+    "app-options history-container";
+}
+
+#original-image-container{
+    grid-area: original-image-container;
+    border: #3584E4 solid 1px;
+}
+#canvas-holder{
+    grid-area:canvas-holder;
+    border: #3584E4 solid 1px;
+}
+
+
+#app-options{
+    grid-area: app-options;
+    display: grid;
+}
+
+#history-container{
+
+    border: #3584E4 solid 1px;
+    grid-area:history-container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+img{
+    width: 100%;
+    object-fit: fill;
+}
+
+
+.range-container{
+    border: #3584E4 solid 1px;
+    color: #3584E4;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    column-gap: 1%;
+    align-items: center;
+    font-family: monospace;
+}
+
+
+.icon{
+    padding: 0;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-image{
+    border: none;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    filter: contrast(50%) brightness(255) drop-shadow(0 0 2px white);
+}
+
+label{
+    color: #bddbff;
+    text-shadow: 0 0 3px #3584E4;
+}
+
+
+
+
+
